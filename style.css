@@ -8,6 +8,8 @@ body {
     font-family: system-ui, sans-serif;
 }
 
+/* ---------- Topo ---------- */
+
 .topo {
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -43,4 +45,72 @@ body {
 .assunto {
     font-size: 13px;
     color: #9AA4B2;
+}
+
+/* ---------- Conversa ---------- */
+
+.conversa {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+}
+
+.balao {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    line-height: 1.45;
+}
+
+.professor {
+    align-self: flex-start;
+    background: #1C222B;
+    border-top-left-radius: 4px;
+}
+
+.aluno {
+    align-self: flex-end;
+    background: #2A2418;
+    border: 1px solid #4A3B1F;
+    border-top-right-radius: 4px;
+    font-family: monospace;
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px 20px;
+    background: #171C23;
+    border-top: 1px solid #262D38;
+}
+
+.campo {
+    flex-grow: 1;
+    min-width: 0;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 14px;
+    border: 1px solid #4FB3A5;
+    border-radius: 12px;
+    background: #0D1015;
+    color: #E8ECF1;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.rodar {
+    height: 48px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 12px;
+    background: #F2A541;
+    color: #1A1206;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
